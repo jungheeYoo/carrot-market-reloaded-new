@@ -20,6 +20,33 @@
 /* style을 재사용할 수 있다 */
 /* apply directive를 사용하거나 별도의 react component로 분리하는 방법도 있음 */
 
-.btn {
+/* .btn {
   @apply w-full bg-black h-10 text-white rounded-sexy-name me-tomato;
+} */
+
+/* layer directive */
+/* layer를 각각 확장할 수 있다 */
+/* base style을 추가하고 싶다면 base layer를 확장할 수 있다 */
+
+/* application 의 모든 link를 위한 일반적인 style */
+@layer base {
+  a {
+    @apply text-blue-500;
+  }
+}
+
+/* application 의 모든 곳에서 사용할 수 있는 새로운 class */
+@layer utilities {
+  .text-bigger-hello {
+    @apply text-3xl font-semibold;
+  }
+}
+
+/* components */
+/* 많은 class를 감쌀 때를 위한 것 */
+/* 버튼을 형성하기 위해 class들을 다같이 추상화하는 컴포넌트 */
+@layer components {
+  .btn {
+    @apply w-full bg-black h-10 text-white rounded-sexy-name mt-tomato;
+  }
 }

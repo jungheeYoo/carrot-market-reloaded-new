@@ -58,6 +58,8 @@
 // ---------------------------------------------------------
 // 3-11
 // Directives
+// apply directive
+// layer directive
 
 import type { Config } from 'tailwindcss';
 
