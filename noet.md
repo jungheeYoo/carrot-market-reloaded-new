@@ -61,3 +61,44 @@ extend: {
 ## Ring Width
 
 - 박스 그림자를 사용하여 아웃라인 링을 생성하는 유틸리티
+  <br/>
+  <br/>
+  <br/>
+
+---
+
+## gradient
+
+- bg-gradient-to-tr from-cyan-500 via-yellow-400 to-purple-400
+  <br/>
+  <br/>
+  <br/>
+
+---
+
+## invalid
+
+- 브라우저가 유효하지 않다고 판단하는 입력 값에 대해 작동
+  <br/>
+  <br/>
+  <br/>
+
+---
+
+## peer
+
+- 형제 상태에 따른 스타일 지정(peer-{modifier})
+- 형제 요소의 상태에 따라 요소의 스타일을 지정해야 하는 경우 형제를 peer 클래스로 표시하고 peer-invalid와 같은 peer-\* 수정자를 사용하여 대상 요소의 스타일을 지정한다.
+- 만약 peer가 유효하지 않다면, peer는 현재 입력 값
+- peer-invalid:bg-red-100 class 를 갖고 있는 형제를 선택해서 배경색을 지정한다
+  \*\*주의
+  CSS에서 후속 형제 결합자(Subsequent-sibling combinator)가 작동하는 방식 때문에 peer 마커는 이전 형제에서만 사용할 수 있다는 점을 유의하기
+
+```
+// 작동하지 않습니다. 이전 형제 자매만 peer로 표시될 수 있습니다.
+// input이 span보다 앞에 있어야 함
+< label >
+< span class="peer-invalid:text-red-500 ..." >Email< /span >
+< input type="email" class="peer ..."/ >
+< /label >
+```
