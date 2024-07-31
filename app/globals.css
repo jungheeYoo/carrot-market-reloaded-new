@@ -1,3 +1,25 @@
+/* directive */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* base */
+/* 컴파일러가 tailwind와 함께 제공되는 기본적인 reset 및 기본 값 스타일 종류를 두는 곳 */
+
+/* components */
+/* 나중에.. */
+
+/* utilities */
+/* 컴파일러가 생성 된 모든 code를 넣는 placeholder */
+/* 모든 utility class name */
+/* 우리가 작성한 모든 class */
+
+/* apply directive */
+/* 전부 보통의 CSS로 변환 됨 */
+/* style을 재사용할 수 있다 */
+/* apply directive를 사용하거나 별도의 react component로 분리하는 방법도 있음 */
+
+.btn {
+  @apply w-full bg-black h-10 text-white rounded-sexy-name me-tomato;
+}

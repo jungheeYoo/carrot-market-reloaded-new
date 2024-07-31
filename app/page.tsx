@@ -211,25 +211,41 @@
 //   );
 // }
 
+// // ---------------------------------------------------------
+// // 3-10
+// // JIT - just in time
+// // Tailwind CSS 작동 방식
+// // just in time compiler
+// // Tailwind CSS 파일이 아니라 compiler 이다
+// // 우리가 파일을 저장할 때마다 Tailwind 는 파일을 스캔해서 class name들을 추출하고
+// // 추출한 것을 CSS 코드로 변환한다. 그래서 class name을 생성할 수 있는 것이다
+// // arbitrary value(대체 값)
+// // 원하는 스타일을 찾을 수 없거나, 사이즈 등을 찾을 수 없을 때 [] 대괄호 안헤 필요한 것을 넣음
+// // theme 확장 가능
+
+// export default function Home() {
+//   return (
+//     <main className="bg-gray-100 sm:bg-red-100 md:bg-green-100 lg:bg-cyan-100 xl:bg-orange-100 2xl:bg-purple-100 h-screen flex items-center justify-center p-5">
+//       <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm flex flex-col gap-4">
+//         <button className="w-full bg-black h-10 text-white rounded-sexy-name me-tomato">
+//           Submit
+//         </button>
+//       </div>
+//     </main>
+//   );
+// }
+
 // ---------------------------------------------------------
-// 3-10
-// JIT - just in time
-// Tailwind CSS 작동 방식
-// just in time compiler
-// Tailwind CSS 파일이 아니라 compiler 이다
-// 우리가 파일을 저장할 때마다 Tailwind 는 파일을 스캔해서 class name들을 추출하고
-// 추출한 것을 CSS 코드로 변환한다. 그래서 class name을 생성할 수 있는 것이다
-// arbitrary value(대체 값)
-// 원하는 스타일을 찾을 수 없거나, 사이즈 등을 찾을 수 없을 때 [] 대괄호 안헤 필요한 것을 넣음
-// theme 확장 가능
+// 3-11
+// Directives
+// apply directive
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 sm:bg-red-100 md:bg-green-100 lg:bg-cyan-100 xl:bg-orange-100 2xl:bg-purple-100 h-screen flex items-center justify-center p-5">
+    <main className="bg-red-100 sm:bg-red-100 md:bg-green-100 lg:bg-cyan-100 xl:bg-orange-100 2xl:bg-purple-100 h-screen flex items-center justify-center p-5">
       <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm flex flex-col gap-4">
-        <button className="w-full bg-black h-10 text-white rounded-sexy-name me-tomato">
-          Submit
-        </button>
+        <input />
+        <button className="btn">Submit</button>
       </div>
     </main>
   );
